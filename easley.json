@@ -1,0 +1,16 @@
+{
+  "template": "dashboard-go",
+  "templateVersion": 1,
+  "type": "application",
+  "entrypoint": "cmd/app",
+  "runtime": {
+    "language": "go",
+    "version": "1.26"
+  },
+  "secrets": ["SOURCE_API_KEY"],
+  "outboundHosts": [],
+  "storage": {
+    "type": "sqlite",
+    "path": "/data/app.db"
+  }
+}
